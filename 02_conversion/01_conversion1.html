@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion1</title>
+</head>
+
+<body>
+    <script>
+        console.log("4" - 2);
+        // 결과 : 2 -> js 에서는 String"4"을 넘버형으로 자동 형변환 시킴.
+        console.log("4" + 2);
+        // 결과 : "42" -> + 는 연결(concatenation) 연산자로 변환함.
+        console.log(typeof ("4" + 2));
+        // 결과 : string -> 정수값이 아니다.
+        console.log("4" * "2");
+        // 결과 : 8 -> sting의 값이 아니라 정수로 변환
+        console.log("10" / "2");
+        // 결과 : 5 -> string의 값이 아니라 정수로 변환
+        console.log(2 + true);
+        // 결과 : 3 -> true는 1로  변환됨
+        console.log(2 + undefined);
+        // 결과 : NaN
+        console.log(4 + null);
+        // 결과 :4 null은 0으로 변환됨
+        console.log("4" + null);
+        // 결과 : "4null"
+        console.log(true + null);
+        // 결과 : 1
+        console.log(true + undefined);
+        // 결과 : NaN
+
+        // Js는 꼭 형변환을 해야 코딩 오류를 예방 할 수 있음
+
+    </script>
+</body>
+
+</html>

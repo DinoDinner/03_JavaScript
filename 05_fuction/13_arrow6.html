@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow6</title>
+</head>
+
+<body>
+    <script>
+        function longestName() {
+            let longest_name = "";
+
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i].length > longest_name.length) {
+                    longest_name = arguments[i];
+                    // fuction을 생성하면 argument라는 객체가 생성 됨. 안 넣어도 괜찮지만 보안상 이유로 넣음.
+                    // 입력되는 데이터의 개수를 모를 대 쓰기 편함
+                    // arguments = 배열, squencece
+                }
+            }
+            return longest_name;
+        }
+        document.write("입력된 데이터 중 가장 긴 이름 : " + longestName("대전", "태백시", "오스트리아", " 대한민국", "서울시", "도쿄"))
+    </script>
+</body>
+
+</html>

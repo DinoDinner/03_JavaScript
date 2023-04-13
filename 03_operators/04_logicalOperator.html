@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logicalOperator</title>
+</head>
+
+<body>
+    <script>
+        let strName1 = "Uzbekistan";
+        let strName2 = "uzbekistan";
+        let string_comp = (strName1 == strName2);
+        // false
+
+        let number1 = 3;
+        let number2 = 3.14;
+        let number_comp = (number1 < number2);
+        // true
+        let linebreak = "<br />";
+
+        let AND_Operator = (string_comp && number_comp);
+        // false && true = false
+        let OR_Operator = (string_comp || number_comp);
+        // false || true = true
+        let NOT_Operator = !(string_comp);
+        // !false = true
+
+        document.write("AND_Operator : " + AND_Operator + linebreak);
+        document.write("OR_Operator : " + OR_Operator + linebreak);
+        document.write("NOT_Operator : " + NOT_Operator + linebreak);
+
+    </script>
+</body>
+
+</html>

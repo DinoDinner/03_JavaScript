@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+
+<body>
+    <script>
+        var message = "또 만나요" // global 정의 -> 전역으로 사용, 어디에서든 사용 가능.
+        hello = "채성근님" // global 정의
+        function sayHello() {
+            var hello = "안녕하세요." // local 정의 -> 지역으로 사용, sayHello 안에서만 사용할 수 있음.
+            var add_message = "은희야," + message
+            console.log(add_message);
+        }
+
+        console.log(message);
+        sayHello()
+        console.log(hello); // sayHello() 실행 -> hello는 fuction sayHello안에서만 사용할 수 있기 때문에 정의가 전역으로 되어있지 않다. 지역변수의 한계.
+    </script>
+</body>
+
+</html>

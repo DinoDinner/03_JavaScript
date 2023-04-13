@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparsionOperator</title>
+</head>
+
+<body>
+    <script>
+        let cityName1 = "Korea";
+        let cityName2 = "korea";
+        let number1 = 4;
+        let number2 = 4.03;
+        let variable1 = 42.195;
+        let variable2 = "42.195";
+        let linebreak = "<br/>";
+
+        document.write("(cityName1 == cityName2)비교 : " + (cityName1 == cityName2) + linebreak);
+        // false 대소문자 차이가 있음
+        document.write("(cityName1 != cityName2)비교 : " + (cityName1 != cityName2) + linebreak);
+        // false
+        document.write("(number1 >= number2)비교 : " + (number1 >= number2) + linebreak);
+        // false
+        document.write("(number1 <= number2)비교 : " + (number1 <= number2) + linebreak);
+        // true
+        document.write("(variable1 == variable2)비교 : " + (variable1 == variable2) + linebreak);
+        // true 숫자 값이 같음
+        document.write("(variable1 === variable2)비교 : " + (variable1 === variable2) + linebreak);
+        // false 변수의 데이터 타입이 다름
+
+    </script>
+</body>
+
+</html>

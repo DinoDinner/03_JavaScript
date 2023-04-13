@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataAccess3</title>
+</head>
+
+<body>
+
+    <h1>외부 JSON 예제</h1>
+    <div id="message"></div>
+    <script type="text/javascript" src="/JSON/employees.json"></script>
+
+    <script>
+        for (var idx in employees_json) {
+            let data = employees_json[idx];
+
+            if (data.positions instanceof Array) {
+                // instanceof -> array와 같은 형태면~
+                let current_position = null;
+                for (var j in data.positions) {
+                    if (data.positions[j].to === null) current_position = data.positions[j].positions;
+                }
+                document.write("emp_nubmer : " + data.emp_number + " , name : " + data.name + ", position : " + current_position);
+            }
+            else {
+                document.write("emp_number : " + data.emp_number + " , name : " + data.name + ", postion : " + data.positions.position);
+            }
+        }
+        // json의 형태가 array 형식이기 때문에 for문 사용
+    </script>
+</body>
+
+</html>

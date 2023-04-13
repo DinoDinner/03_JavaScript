@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+</head>
+
+<body>
+    <script>
+        // Date 객체(object)를 이용 현재의 날짜를 "일/월/년" 형태로 5번 출력
+        let yourDate = new Date();      // Date 객체 생성
+        let curr_day = yourDate.getDate();     // 일
+        let curr_month = yourDate.getMonth();       // 월
+        curr_month++;       // 내부적으로 1월(Jan) = 0
+        let curr_year = yourDate.getFullYear();       //년
+        var count = 1;
+
+        document.write(yourDate + "<br />");
+        while (count < 6) {
+            document.write(curr_month + "/" + curr_day + "/" + curr_year + "<br/>");
+            count++;    // 이 코드가 없다면 무한 루프에 빠지게 됨.
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let2</title>
+</head>
+
+<body>
+    <script>
+        let name = "김창수"; // global 변수 정의
+
+        if (true) { // if 절 true는 블록 안에서 필수로 코드를 실행한다. -> 전역 name에 대한 실행하지 X
+            let name = "이은희"; // if 함수 안에서 name 정의
+            console.log(name + ", 안녕?");
+        }
+
+        console.log(name); // 이은희 안녕 ? 출력.
+
+        // 만약 if절이 false 값이라면, 변수 name은 김창수로 출력됨.
+    </script>
+</body>
+
+</html>

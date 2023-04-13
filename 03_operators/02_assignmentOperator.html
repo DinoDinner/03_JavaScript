@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignmentOperator</title>
+</head>
+
+<body>
+    <script>
+        let number1 = 3;
+        let number2 = 10;
+        let linebreak = "<br/>";
+
+        // document는 html의 body와 같다.
+        result = (number1 += 4);
+        document.write("result of (number1 +=4) : " + result + linebreak);
+        result = (number1 -= 4);
+        document.write("result of (number1 -=4) : " + result + linebreak);
+        result = (number2 *= 4);
+        document.write("result of (number2 *=4) : " + result + linebreak);
+        result = (number2 /= 4);
+        document.write("result of (number2 /=4) : " + result + linebreak);
+        result = (number2 %= number1);
+        document.write("result of (number2 %=number1) : " + result + linebreak);
+
+    </script>
+</body>
+
+</html>

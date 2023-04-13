@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListner2</title>
+</head>
+
+<body>
+    <p id="greetings">안녕하세요.</p>
+    <input id="message" type="button" value="확인">
+
+    <script>
+        let pElem = document.getElementById('greetings');   // 1단계  : 연결할 대상 선택 -> pElem = greetings
+        let inputElem = document.getElementById('message');
+
+        pElem.addEventListener("dblclick", () => { console.log("네, 만나서 반갑습니다."); }, false);    // 클릭된 자신 부터 연결되는 상태 = 버블링
+        // event 정의 -> 실제 event 처리
+        inputElem.addEventListener("click", () => { console.log("그동안 잘 지내셨죠?"); }, false);
+    </script>
+</body>
+
+</html>

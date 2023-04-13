@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pushPop</title>
+</head>
+
+<body>
+    <script>
+        let cities = ["서울", "부산", "인천"];
+        let extra_cities = ["광주", "대전"];
+
+        show_item(cities);      // 처음 cities 값
+
+        cities.push("전주", "춘천");        // 두 도시를 합침
+        show_item(cities);      // 추가된 cites 값
+
+        let returnValue = cities.pop();     // 마지막 값을 방출
+        document.write(returnValue + "<br/>")
+
+        show_item(cities);      // 마지막 cities 값
+
+        function show_item(in_array) {  // 3개를 쓸 필요가 없이 함수 하나만으로 해결
+            if (Array.isArray(in_array)) {
+                for (var idx = 0; idx < in_array.length; idx++)
+                    document.write("in_array[" + idx + "] : " + in_array[idx] + "<br/>");
+                document.write(`아이템 수 : ${in_array.length} <br/>`);
+            }
+        }
+    </script>
+</body>
+
+</html>

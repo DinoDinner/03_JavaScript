@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noPara_return</title>
+</head>
+
+<body>
+    <script>
+        function current_Date() {
+            let curr_Date = new Date().toISOString();
+            // ISO 표준의 데이터 String 반환
+            // let curr_Date = new Date().toISOString().slice(0, 10);
+            // Slice는 0~10 숫자까지 자름.
+            return curr_Date;
+        }
+        let returnDate = current_Date();    // current_Date 함수 호출(실행)
+        document.write("Current Date : " + returnDate);
+    </script>
+</body>
+
+</html>

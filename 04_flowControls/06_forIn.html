@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forIn</title>
+</head>
+
+<body>
+    <script>
+        let member = ["김창수", 35, "cskim@naver.com", "강릉시"]
+        // array의 요소값 순서대로 이름, 나이, 이메일, 거주지
+        // 1열로 배열되어 있기 때문에 1차원 배열
+
+        for (let i in member) {
+            console.log(member[i]);
+        }
+        // for-in문은 자동적으로 반복함
+        // while문은 조건은 true 일 때 무한 반복할 수 있다.
+    </script>
+</body>
+
+</html>
